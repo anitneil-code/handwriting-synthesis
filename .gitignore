@@ -4,6 +4,8 @@ data/raw/original
 data/processed
 
 logs
+.idea/
+__pycache__/
 predictions
 venv
 

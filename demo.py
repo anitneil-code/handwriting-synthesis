@@ -3,7 +3,6 @@ from hand import Hand
 
 import lyrics
 
-
 if __name__ == '__main__':
     hand = Hand()
 
@@ -54,7 +53,7 @@ if __name__ == '__main__':
 
     # demo number 3 - varying bias, fixed style
     lines = lyrics.give_up.split("\n")
-    biases = .2*np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
+    biases = .2 * np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
     styles = [7 for i in lines]
 
     hand.write(
